@@ -3,14 +3,16 @@
 .btn {
 	height: 3rem;
 	min-width: 3rem;
-	border: 3px solid $color-system-default-40;
+	border: 3px solid $color-ref-orange-20;
 	outline: none;
-	background: $color-primary-orange;
-	border-radius: 20%;
+	background:$color-primary-dark-green;
+	border-radius: 8px;
 	margin-left: 16px;
+	color: $color-ref-orange-10;
 }
 .btn:disabled {
 	background: $color-system-default-40;
+	border: 3px solid $color-system-default-40;
 }
 
 .createTask {

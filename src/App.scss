@@ -17,7 +17,7 @@
 	font-size: 2rem;
 	text-transform: uppercase;
 	text-align: center;
-	color:$color-system-default-40;
+	color: $color-ref-orange-20;
 }
 
 .main {
@@ -26,13 +26,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 2rem;
-	margin-top: 3rem;
-	@include tablet {
-		margin-top: 3.75rem;
-	}
-
-	@include full_desktop {
-		margin-top: 4.625rem;
-	}
+	padding: 1rem;
+	margin-top: 2rem;
 }

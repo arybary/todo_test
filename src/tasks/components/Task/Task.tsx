@@ -32,18 +32,22 @@ const Task: React.FC<TaskProps> = ({ done, updateTaskDone, updateTaskText, delet
                     taskText={selectedTask}
                     onInputChange={handleInputChange}
                     onSubmit={() => updateTaskText(selectedTask)}
-                    nameBtn={'Update Task'}
+                        nameBtn={'update'}
                 />
             )}
 
             <div className={s.listItemBtns}>
                 {selectedTask === '' && (
-                    <button className={s.listItemBtns__btn} onClick={() => setSelectedTask(text)} disabled={done}>
+                    <button
+                        className={s.listItem__edit}
+                        onClick={() => setSelectedTask(text)}
+                        disabled={done}
+                    >
                         edit
                     </button>
                 )}
-                <button className={s.listItemBtns__btn} onClick={deleteTask}>
-                    X
+                <button className={s.listItem__delete} onClick={deleteTask}>
+                    x
                 </button>
             </div>
         </li>

@@ -22,7 +22,7 @@ const CreateTaskFormContainer: React.FC = () => {
             taskText={taskText}
             onInputChange={handleInputChange}
             onSubmit={handleSubmit}
-            nameBtn={'Add TASK'}
+            nameBtn={'ADD'}
         />
     );
 };

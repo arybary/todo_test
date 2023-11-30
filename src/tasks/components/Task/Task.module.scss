@@ -35,20 +35,29 @@
 		width: 5rem;
 		height: 3rem;
 		margin-left: auto;
+	}
+	&__edit {
+		width: 3rem;
+		height: 3rem;
+		text-align: center;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		border-radius: 50%;
+		background: $color-primary-dark-green;
+		color: $color-primary-orange;
+	
+	}
+	&__delete {
+		width: 1.5rem;
+		height: 1.5rem;
+		text-align: center;
+		border-radius: 25%;
+		font-size: 1rem;
+		background-color: $color-secondary-error;
+		color:$color-neutral-colors-white ;
+	}
 
-		&__btn {
-			width: 2rem;
-			height: 2rem;
-			text-align: center;
-			font-size: 1rem;
-			line-height: 1.2rem;
-			border-radius: 50%;
-			background: $color-primary-dark-green;
-			color: $color-primary-orange;
-		}
-
-		&__btn:disabled {
-			background: $color-ref-orange-0;
-		}
+	&__btn:disabled {
+		background: $color-ref-orange-0;
 	}
 }
