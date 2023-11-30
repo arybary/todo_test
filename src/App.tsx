@@ -1,5 +1,6 @@
 import './App.scss';
 import CreateTaskFormContainer from './tasks/containers/CreateTaskFormContainer';
+import PaginationContainer from './tasks/containers/PaginationContainer';
 import TaskListContainer from './tasks/containers/TaskListContainer';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <main className="todo-list">
         <CreateTaskFormContainer />
         <TaskListContainer />
+        <PaginationContainer />
       </main>
     </div>
   );

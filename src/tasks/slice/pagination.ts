@@ -23,4 +23,9 @@ const paginationSlice = createSlice({
     },
 });
 
+export const {
+    setPaginationPage,
+    setPaginationRowsPerPage,
+} = paginationSlice.actions;
+
 export default paginationSlice.reducer;

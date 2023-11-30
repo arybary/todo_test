@@ -1,11 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import tasksReducer from '../tasks/slice/tasks';
-import paginationReducer from '../tasks/slice/tasks';
+import paginationReducer from '../tasks/slice/pagination';
 
 export const store = configureStore({
   reducer: {
     tasks: tasksReducer,
-    paginationReducer: paginationReducer
+    pagination: paginationReducer
   },
 });
 
