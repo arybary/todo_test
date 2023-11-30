@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppDispatch } from '../../hooks/hooks';
-import { deleteTask, updateTask } from '../thunk';
+import { deleteTask, updateTask } from '../thunks/tasks.thunks';
 import Task from '../components/Task/Task';
 
 interface TaskProps {

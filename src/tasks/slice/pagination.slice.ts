@@ -15,19 +15,15 @@ const paginationSlice = createSlice({
     initialState,
     reducers: {
         setPaginationPage: (state, action: PayloadAction<number>) => {
-            console.log(state)
             state.page = action.payload;
         },
         setPaginationRowsPerPage: (state, action: PayloadAction<number>) => {
-            console.log(state)
+            console.log(state);
             state.rowsPerPage = action.payload;
         },
     },
 });
 
-export const {
-    setPaginationPage,
-    setPaginationRowsPerPage,
-} = paginationSlice.actions;
+export const { setPaginationPage, setPaginationRowsPerPage } = paginationSlice.actions;
 
 export default paginationSlice.reducer;

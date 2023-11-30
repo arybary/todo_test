@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
-import { fetchTasks } from '../thunk';
-import { selectError, selectStatus, selectTasksView } from '../selector';
+import { fetchTasks } from '../thunks/tasks.thunks';
+import { selectError, selectStatus, selectTasksView } from '../selector/tasks.selectors';
 import TaskList from '../components/TaskList/TaskList';
 
 const TaskListContainer: React.FC = () => {

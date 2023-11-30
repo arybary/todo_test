@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { Task } from '../model/task';
-import { fetchTasks } from '../thunk';
+import { fetchTasks } from '../thunks/tasks.thunks';
 
 export interface TasksState {
     tasksList: Task[];

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../../hooks/hooks';
 import TaskForm from '../components/TaskForm/TaskForm';
-import { createTask } from '../thunk';
+import { createTask } from '../thunks/tasks.thunks';
 
 const CreateTaskFormContainer: React.FC = () => {
     const dispatch = useAppDispatch();

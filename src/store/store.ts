@@ -1,6 +1,6 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import tasksReducer from '../tasks/slice/tasks';
-import paginationReducer from '../tasks/slice/pagination';
+import tasksReducer from '../tasks/slice/tasks.slice';
+import paginationReducer from '../tasks/slice/pagination.slice';
 import logger from './logger';
 
 export const store = configureStore({

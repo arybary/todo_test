@@ -15,7 +15,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, status, error }) => {
     }
 
     if (status === 'failed') {
-        return <div className={s.spinner}>Error: {error}</div>;
+        return <div className={s.error}>Error: {error}</div>;
     }
 
     return (

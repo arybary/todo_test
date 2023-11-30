@@ -1,0 +1,31 @@
+@use 'src/styles/variables' as *;
+
+.pagination {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+
+	&Select {
+		width: 3rem;
+		height: 3rem;
+		font-size: 1rem;
+		border-radius: 20%;
+	}
+	&Pages {
+		display: flex;
+		justify-content: space-between;
+		min-width: 60%;
+	}
+	&Btn {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		border: 3px solid $color-system-default-40;
+		&__now {
+			background-color: $color-primary-dark-green;
+			color: $color-neutral-colors-white;
+		}
+	}
+
+}

@@ -28,6 +28,9 @@ button {
 	font-family: inherit;
 	cursor: pointer;
 }
+button:disabled {
+	cursor: auto;
+}
 
 h1,
 h1,

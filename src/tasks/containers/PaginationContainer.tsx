@@ -1,8 +1,8 @@
 import React from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
-import { selectPaginationParam } from '../selector';
-import SelectPage from '../components/Paination/Pagination';
-import { setPaginationPage, setPaginationRowsPerPage } from '../slice/pagination';
+import { selectPaginationParam } from '../selector/tasks.selectors';
+import SelectPage from '../components/Pagination/Pagination';
+import { setPaginationPage, setPaginationRowsPerPage } from '../slice/pagination.slice';
 
 const PaginationContainer: React.FC = () => {
     const dispatch = useAppDispatch();
