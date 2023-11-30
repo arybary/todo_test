@@ -14,7 +14,7 @@
 	}
 	&Pages {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		flex-wrap: wrap;
 		min-width: 60%;
 	}
