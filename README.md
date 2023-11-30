@@ -3,9 +3,6 @@
 Link Deploy:
 https://poetic-druid-44d312.netlify.app/
 
-Test:
-https://docs.google.com/document/u/0/d/1Rbou0AS4aGOFXAFP4OWp7EmYV9ujYzyvuQAVaBCENNQ/mobilebasic?hl=ru
-
 # React TODO List Application
 
 This project involves developing a React application featuring a TODO list with API interaction, pagination, CRUD operations, custom design, and state management through Redux.
