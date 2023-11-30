@@ -1,5 +1,5 @@
 Link Deploy:
-https://leafy-swan-565184.netlify.app/
+https://poetic-druid-44d312.netlify.app/
 
 # vite-template-redux
 
