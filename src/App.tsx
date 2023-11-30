@@ -6,8 +6,10 @@ import TaskListContainer from './tasks/containers/TaskListContainer';
 function App() {
   return (
     <div>
-      <h1 className="title">Todo List</h1>
-      <main className="todo-list">
+      <header className="header">
+        <h1 className="title">Todo List</h1>
+      </header>
+      <main className="main">
         <CreateTaskFormContainer />
         <TaskListContainer />
         <PaginationContainer />

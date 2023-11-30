@@ -12,7 +12,8 @@ export const selectPaginationParam = createSelector(
     (pagination, tasks) => {
         const { page, rowsPerPage } = pagination;
         const countPages = Math.ceil(tasks.length / rowsPerPage);
-        return { page, countPages, rowsPerPage };
+        const pageNumbers = Array.from({ length: countPages }, (_, index) => index + 1)
+        return { page, pageNumbers, countPages, rowsPerPage };
     }
 );
 

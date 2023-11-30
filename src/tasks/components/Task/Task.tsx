@@ -26,9 +26,7 @@ const Task: React.FC<TaskProps> = ({ done, updateTaskDone, updateTaskText, delet
                 onChange={updateTaskDone}
             />
             {selectedTask === '' ? (
-                <span onClick={() => setSelectedTask(text)} className={s.listItem__text}>
-                    {text}
-                </span>
+                <span className={s.listItem__text}>{text}</span>
             ) : (
                 <TaskForm
                     taskText={selectedTask}
@@ -37,7 +35,17 @@ const Task: React.FC<TaskProps> = ({ done, updateTaskDone, updateTaskText, delet
                     nameBtn={'Update Task'}
                 />
             )}
-            <button className={s.listItem__deleteBtn} onClick={deleteTask}></button>
+
+            <div className={s.listItemBtns}>
+                {selectedTask === '' && (
+                    <button className={s.listItemBtns__btn} onClick={() => setSelectedTask(text)} disabled={done}>
+                        edit
+                    </button>
+                )}
+                <button className={s.listItemBtns__btn} onClick={deleteTask}>
+                    X
+                </button>
+            </div>
         </li>
     );
 };

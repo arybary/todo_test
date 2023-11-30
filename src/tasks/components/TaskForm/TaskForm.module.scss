@@ -1,20 +1,28 @@
+@use 'src/styles/variables' as *;
+
 .btn {
-	height: 32px;
-	min-width: 64px;
-	border: 3px solid #ccc;
+	height: 3rem;
+	min-width: 3rem;
+	border: 3px solid $color-system-default-40;
 	outline: none;
-	cursor: pointer;
-	border-radius: 8px;
+	background: $color-primary-orange;
+	border-radius: 20%;
 	margin-left: 16px;
+}
+.btn:disabled {
+	background: $color-system-default-40;
 }
 
 .createTask {
 	display: flex;
-	margin-bottom: 8px;
+	margin-bottom: 1rem;
+	width: 100%;
 
 	&__input {
-		height: 32px;
-		border: 3px solid #ccc;
+		height: 3rem;
+		font-size: 1rem;
+		width: 100%;
+		border: 3px solid $color-system-default-40;
 		border-radius: 8px;
 		flex: 1;
 	}

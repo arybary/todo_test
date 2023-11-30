@@ -1,11 +1,18 @@
+@use 'src/styles/variables' as *;
+@use 'src/styles/mixins' as *;
+
 .listItem {
 	display: flex;
 	align-items: center;
-	height: 40px;
+	height: 3.5rem;
 	border-radius: 8px;
-	background-color: wheat;
+	background-color: $color-ref-orange-0;
 	margin-bottom: 8px;
 	padding: 8px;
+	width: 100%;
+	@include tablet {
+		width: 49%;
+	}
 
 	&:last-child {
 		margin-bottom: 0;
@@ -13,9 +20,11 @@
 
 	&_done {
 		opacity: 0.7;
+		background: $color-ref-orange-20;
 
 		.listItem__text {
 			text-decoration: line-through;
+			color: $color-neutral-colors-white;
 		}
 	}
 
@@ -23,35 +32,27 @@
 		margin-right: 8px;
 	}
 
-	&__deleteBtn {
-		width: 24px;
-		height: 24px;
-		border-radius: 50%;
-		outline: none;
-		cursor: pointer;
-		background: transparent;
-		border: none;
+	&Btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 5rem;
+		height: 3rem;
 		margin-left: auto;
-		text-decoration: none;
-		padding: 0;
-		transform: rotate(45deg);
-		font-size: 18px;
-		line-height: 24px;
-		text-align: center;
-		opacity: 0.7;
 
-		&::before {
-			content: '+';
+		&__btn {
+			width: 2rem;
+			height: 2rem;
+			text-align: center;
+			font-size: 1rem;
+			line-height: 1.2rem;
+			border-radius: 50%;
+			background: $color-primary-dark-green;
+			color: $color-primary-orange;
+		}
+
+		&__btn:disabled {
+			background: $color-ref-orange-0;
 		}
 	}
-}
-
-.btn {
-	height: 32px;
-	min-width: 64px;
-	border: 3px solid #ccc;
-	outline: none;
-	cursor: pointer;
-	border-radius: 8px;
-	margin-left: 16px;
 }

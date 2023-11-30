@@ -1,24 +1,37 @@
+@use 'src/styles/variables' as *;
+@use 'src/styles/mixins' as *;
+
+.header {
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $color-primary-dark-green;
+}
+
 .title {
-	font-size: 24px;
+	font-size: 2rem;
 	text-transform: uppercase;
 	text-align: center;
+	color:$color-system-default-40;
 }
 
-.todo-list {
+.main {
+	flex: 1;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	margin-top: 32px;
-	background-color: coral;
-	border-radius: 8px;
-	padding: 8px;
-	max-width: 600px;
-	margin: auto;
-}
+	padding: 2rem;
+	margin-top: 3rem;
+	@include tablet {
+		margin-top: 3.75rem;
+	}
 
-.list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	margin: auto;
-	width: 100%;
+	@include full_desktop {
+		margin-top: 4.625rem;
+	}
 }
