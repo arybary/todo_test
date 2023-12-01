@@ -15,11 +15,10 @@ const paginationSlice = createSlice({
     initialState,
     reducers: {
         setPaginationPage: (state, action: PayloadAction<number>) => {
-            state.page = action.payload;
+            return { ...state, page: action.payload };
         },
         setPaginationRowsPerPage: (state, action: PayloadAction<number>) => {
-            console.log(state);
-            state.rowsPerPage = action.payload;
+            return { ...state, rowsPerPage: action.payload };
         },
     },
 });
